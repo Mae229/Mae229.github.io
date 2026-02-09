@@ -273,7 +273,7 @@ section h3 {
 }
 
 /* Section Tips */
-#tips h4 {
+#tips blockquote {
     font-size: 1.5em;
     color: rgb(18, 18, 105);
     text-align: center;
