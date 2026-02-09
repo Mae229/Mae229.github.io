@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Java Programming Language</title>
+</head>
+<body>
+    <header>
+        <h1>Java Programming Language</h1>
+        <h2>Write Once, Run Anywhere</h2>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="python.html">Python</a></li>
+            <li> <a href="javascript.html">JavaScript</a></li>
+            <li><a href="java.html" class="active">Java</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="intro">
+            <h2>What is Java?</h2>
+            <div id="intropng">
+                <img src="img/java1.png" alt="Java programming code">
+                <img src="img/java2.webp" alt="Java development">
+                <img src="img/java3.png" alt="Java applications">
+            </div>
+            <div class="introtext">
+                <p>
+                    Java is a class-based, object-oriented programming language designed by James Gosling at Sun Microsystems and released in 1995. 
+                    The language was created with the philosophy of "Write Once, Run Anywhere" (WORA), meaning compiled Java code can run on any platform that supports Java without recompilation. 
+                    This cross-platform capability, combined with robust security features and automatic memory management, made Java enormously popular for enterprise applications.
+                </p>
+                <p>
+                    Java code compiles to bytecode that runs on the Java Virtual Machine (JVM), an abstraction layer between the program and the operating system. 
+                    This architecture provides platform independence while maintaining good performance. 
+                    The language includes extensive standard libraries covering everything from data structures to networking, making it suitable for building complete applications without external dependencies.
+                </p>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>Key Features of Java</h2>
+            
+            <div class="type-grid">
+                <div class="type-card">
+                    <h3>Object-Oriented Programming</h3>
+                    <p>
+                        Java enforces object-oriented design through classes and objects, encouraging modular and reusable code. 
+                        Concepts like inheritance, polymorphism, and encapsulation are fundamental to Java programming. 
+                        Everything in Java is an object (except primitive types), promoting a consistent programming model throughout applications.
+                    </p>
+                </div>
+
+                <div class="type-card">
+                    <h3>Platform Independence</h3>
+                    <p>
+                        Java bytecode runs on any system with a JVM installed, eliminating the need to compile separately for different operating systems. 
+                        This makes Java ideal for applications that must run across diverse environments. 
+                        The "write once, run anywhere" capability significantly reduces deployment complexity and maintenance costs.
+                    </p>
+                </div>
+
+                <div class="type-card">
+                    <h3>Automatic Memory Management</h3>
+                    <p>
+                        Java's garbage collector automatically reclaims memory from objects no longer in use, preventing memory leaks. 
+                        Programmers don't need to manually allocate and free memory as in C or C++. 
+                        This automation reduces bugs and allows developers to focus on business logic rather than memory management details.
+                    </p>
+                </div>
+
+                <div class="type-card">
+                    <h3>Rich Standard Library</h3>
+                    <p>
+                        The Java Class Library provides thousands of pre-built classes for common programming tasks. 
+                        From collections and I/O to networking and GUI development, extensive APIs are available out of the box. 
+                        This comprehensive ecosystem accelerates development by providing tested, reliable components for most programming needs.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="uses">
+            <h2>Common Uses of Java</h2>
+            <ul class="benefits-list">
+                <li>
+                    <strong>Enterprise Applications:</strong> Java dominates in large-scale business applications, particularly in banking, insurance, and retail sectors. 
+                    Frameworks like Spring and Java EE provide infrastructure for building robust, scalable enterprise systems. 
+                    Companies value Java's stability, security, and the availability of experienced developers.
+                </li>
+                <li>
+                    <strong>Android Development:</strong> Android apps are primarily developed in Java (though Kotlin is now preferred). 
+                    The Android SDK is built on Java, making it essential knowledge for mobile developers. 
+                    Millions of Android applications demonstrate Java's capability for mobile platforms.
+                </li>
+                <li>
+                    <strong>Web Applications:</strong> Java powers many major websites and web services through frameworks like Spring Boot and JavaServer Faces. 
+                    Server-side Java handles business logic, database access, and API development for complex web systems. 
+                    Sites like LinkedIn, eBay, and Amazon use Java extensively in their backend infrastructure.
+                </li>
+                <li>
+                    <strong>Big Data Technologies:</strong> Apache Hadoop, Apache Spark, and other big data frameworks are built with Java. 
+                    The language's performance and scalability make it suitable for processing massive datasets. 
+                    Java's strong typing and error handling are valuable when working with complex data pipelines.
+                </li>
+                <li>
+                    <strong>Scientific Applications:</strong> Java is used in scientific computing for simulations, data analysis, and visualization. 
+                    Its platform independence allows researchers to share applications across different systems easily. 
+                    Libraries for mathematics, statistics, and machine learning extend Java's capabilities for scientific work.
+                </li>
+            </ul>
+        </section>
+
+        <section id="advantages">
+            <h2>Advantages and Drawbacks</h2>
+            <p class="section-intro">
+                Java's design choices create specific strengths and limitations that affect its suitability for different projects.
+            </p>
+            
+            <div class="criteria-grid">
+                <div class="criteres">
+                    <h3>Advantages</h3>
+                    <p>
+                        <strong>Portability:</strong> True cross-platform capability through the JVM enables deployment anywhere.<br><br>
+                        <strong>Security:</strong> Built-in security features and the JVM's sandbox environment protect against malicious code.<br><br>
+                        <strong>Mature Ecosystem:</strong> Decades of development have produced extensive libraries, frameworks, and tools.<br><br>
+                        <strong>Strong Typing:</strong> Static typing catches errors at compile time, improving code reliability and maintainability.
+                    </p>
+                </div>
+
+                <div class="criteres">
+                    <h3>Drawbacks</h3>
+                    <p>
+                        <strong>Verbose Syntax:</strong> Java requires more boilerplate code compared to modern languages like Python or Kotlin.<br><br>
+                        <strong>Performance Overhead:</strong> The JVM adds overhead compared to natively compiled languages like C or C++.<br><br>
+                        <strong>Memory Consumption:</strong> Java applications typically use more memory than equivalent programs in other languages.<br><br>
+                        <strong>Slower Startup:</strong> JVM initialization can cause slower application startup compared to native executables.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="getting-started">
+            <h2>Beginning Your Java Journey</h2>
+            <p class="section-intro">
+                Learning Java provides a solid foundation in object-oriented programming and prepares you for enterprise development.
+            </p>
+            
+            <div class="languages-grid">
+                <div class="language-card">
+                    <h3>Setup and Installation</h3>
+                    <p>
+                        Download and install the Java Development Kit (JDK) from Oracle or use OpenJDK, the open-source alternative. 
+                        Choose an Integrated Development Environment like IntelliJ IDEA, Eclipse, or NetBeans for enhanced productivity. 
+                        Configure environment variables (JAVA_HOME and PATH) to run Java from the command line.
+                    </p>
+                </div>
+
+                <div class="language-card">
+                    <h3>Learn Core Concepts</h3>
+                    <p>
+                        Start with Java syntax, data types, and control structures before diving into object-oriented concepts. 
+                        Understanding classes, objects, inheritance, and polymorphism is essential for Java development. 
+                        Practice with small programs to internalize these concepts before tackling larger projects.
+                    </p>
+                </div>
+
+                <div class="language-card">
+                    <h3>Explore the Ecosystem</h3>
+                    <p>
+                        Familiarize yourself with build tools like Maven or Gradle for project management and dependency handling. 
+                        Learn popular frameworks such as Spring for building production-ready applications. 
+                        Resources like Oracle's Java tutorials and online courses provide structured learning paths from beginner to advanced levels.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips">
+            <h4>"Java is to JavaScript what car is to carpet." - Chris Heilmann</h4>
+
+            <h2>Java Development Best Practices:</h2>
+            <ol>
+                <li>
+                    <p>
+                        <strong>Follow naming conventions:</strong> Use camelCase for variables and methods, PascalCase for classes. 
+                        Consistent naming makes code more readable and helps other developers understand your intent. 
+                        Most Java projects follow these conventions, making them a de facto standard in the community.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Understand and properly use access modifiers (public, private, protected) to encapsulate your code. 
+                        Keep fields private and provide public methods for controlled access when necessary. 
+                        Proper encapsulation prevents unintended modifications and makes code easier to maintain and refactor.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Learn exception handling thoroughly, using try-catch blocks appropriately and creating custom exceptions when needed. 
+                        Don't catch exceptions unless you can handle them meaningfully. 
+                        Proper exception handling makes applications more robust and helps identify problems during development and production.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Utilize interfaces and abstract classes to create flexible, maintainable designs following SOLID principles. 
+                        Favor composition over inheritance to avoid tight coupling between classes. 
+                        Design patterns like Factory, Observer, and Strategy solve common problems in object-oriented design.
+                    </p>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer">
+            <h4>Sources</h4>
+            <ul>
+                <li><a href="https://www.oracle.com/java/" target="_blank">Oracle Java Official Website</a></li>
+                <li><a href="https://docs.oracle.com/javase/tutorial/" target="_blank">Oracle Java Tutorials</a></li>
+                <li><a href="https://www.baeldung.com/" target="_blank">Baeldung Java Tutorials</a></li>
+                <li><a href="https://www.javatpoint.com/" target="_blank">JavaTpoint Learning Resources</a></li>
+                <li>Effective Java by Joshua Bloch - Key Concepts</li>
+            </ul>
+
+            <p>Disclaimer: This content is paraphrased; not copied directly from sources</p>
+            <p>&copy; 2026 - Academic Project CST336 (Maeva AKPACA)</p>
+        </div>
+    </footer>
+</body>
+</html>

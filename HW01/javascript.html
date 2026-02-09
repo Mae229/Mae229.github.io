@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>JavaScript Programming Language</title>
+</head>
+<body>
+    <header>
+        <h1>JavaScript</h1>
+        <h2>The Engine of the Modern Web</h2>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="python.html">Python</a></li>
+            <li><a href="javascript.html" class="active">JavaScript</a></li>
+            <li><a href="java.html">Java</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="intro">
+            <h2>What is JavaScript?</h2>
+            <div id="intropng">
+                <img src="img/js1.png" alt="JavaScript code snippet">
+                <img src="img/js2.png" alt="Web browser console">
+                <img src="img/js3.jpg" alt="Modern JS frameworks">
+            </div>
+            <div class="introtext">
+                <p>
+                    JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript specification. 
+                    Created by Brendan Eich in 1995 in just ten days, it was originally designed to make web pages interactive. 
+                    Today, it has evolved into a versatile, multi-paradigm language used for both client-side and server-side development.
+                </p>
+                <p>
+                    As the core technology of the World Wide Web alongside HTML and CSS, JavaScript is supported by all modern browsers. 
+                    It features dynamic typing, prototype-based object-orientation, and first-class functions. 
+                    With the advent of Node.js, JavaScript expanded beyond browsers, allowing developers to build full-stack applications using a single language.
+                </p>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>Key Characteristics of JavaScript</h2>
+            
+            <div class="type-grid">
+                <div class="type-card">
+                    <h3>Client-Side Execution</h3>
+                    <p>
+                        JavaScript runs directly in the user's browser, allowing for immediate feedback without waiting for server responses. 
+                        It can manipulate the Document Object Model (DOM) to update content and styles dynamically. 
+                        This capability enables the creation of rich, interactive user interfaces and single-page applications.
+                    </p>
+                </div>
+
+                <div class="type-card">
+                    <h3>Asynchronous Nature</h3>
+                    <p>
+                        JavaScript uses an event loop to handle operations like network requests or timers without blocking the main thread. 
+                        Features like Promises and Async/Await allow developers to manage complex sequences of events cleanly. 
+                        This non-blocking architecture is essential for building highly responsive applications.
+                    </p>
+                </div>
+
+                <div class="type-card">
+                    <h3>Interpreted & JIT Compiled</h3>
+                    <p>
+                        Unlike C, JavaScript is traditionally interpreted, though modern engines use Just-In-Time (JIT) compilation for speed. 
+                        This means code can be executed immediately without a manual compilation step by the developer. 
+                        This leads to a fast development cycle and great flexibility during runtime.
+                    </p>
+                </div>
+
+                <div class="type-card">
+                    <h3>Multi-Paradigm</h3>
+                    <p>
+                        JavaScript supports various programming styles, including functional, imperative, and object-oriented approaches. 
+                        Functions are "first-class citizens," meaning they can be passed as arguments or returned from other functions. 
+                        This flexibility allows developers to choose the best architectural approach for their specific needs.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="uses">
+            <h2>Where JavaScript is Used</h2>
+            <ul class="benefits-list">
+                <li>
+                    <strong>Web Development:</strong> It is the backbone of front-end development, powering interactivity on nearly every website. 
+                    Frameworks like React, Vue, and Angular help build complex interfaces efficiently. 
+                    JavaScript handles everything from simple form validation to complex 3D graphics in the browser.
+                </li>
+                <li>
+                    <strong>Server-Side (Node.js):</strong> With Node.js, JavaScript is used to build scalable back-end services and APIs. 
+                    Its event-driven architecture is particularly well-suited for real-time applications like chat apps and streaming services. 
+                    This allows developers to use the same language for both the front-end and back-end.
+                </li>
+                <li>
+                    <strong>Mobile App Development:</strong> Frameworks like React Native and Ionic allow developers to build mobile apps for iOS and Android. 
+                    This "write once, run anywhere" approach significantly reduces development time and costs. 
+                    Many popular apps in the app stores today are built primarily with JavaScript.
+                </li>
+                <li>
+                    <strong>Game Development:</strong> Using libraries like Three.js or Babylon.js, developers can create 2D and 3D games that run in the browser. 
+                    WebAssembly also allows JavaScript to work alongside higher-performance languages for gaming. 
+                    The ease of distribution through a URL makes JS games highly accessible.
+                </li>
+                <li>
+                    <strong>Internet of Things (IoT):</strong> JavaScript is increasingly used in robotics and IoT devices via platforms like Johnny-Five. 
+                    Its asynchronous nature is ideal for handling the multiple sensors and inputs typical in hardware projects. 
+                    It bridges the gap between web services and physical devices.
+                </li>
+            </ul>
+        </section>
+
+        <section id="advantages">
+            <h2>Strengths and Limitations</h2>
+            <p class="section-intro">
+                JavaScript's ubiquity and ease of use come with specific challenges that developers must navigate. 
+                Understanding these helps in choosing the right tools and patterns.
+            </p>
+            
+            <div class="criteria-grid">
+                <div class="criteres">
+                    <h3>Strengths</h3>
+                    <p>
+                        <strong>Speed:</strong> Executing code on the client-side reduces server load and provides instant feedback.<br><br>
+                        <strong>Ecosystem:</strong> NPM (Node Package Manager) offers the largest collection of open-source libraries in the world.<br><br>
+                        <strong>Versatility:</strong> A single language for web, server, mobile, and even desktop applications (via Electron).<br><br>
+                        <strong>Interoperability:</strong> JavaScript plays well with other languages and can be embedded into many different types of software.
+                    </p>
+                </div>
+
+                <div class="criteres">
+                    <h3>Limitations</h3>
+                    <p>
+                        <strong>Security:</strong> Because code runs on the user's machine, it can be exploited for malicious purposes if not properly secured.<br><br>
+                        <strong>Browser Inconsistency:</strong> Different browsers may interpret JavaScript slightly differently, requiring polyfills or testing.<br><br>
+                        <strong>Weak Typing:</strong> Dynamic and weak typing can lead to unexpected bugs that are only caught during runtime.<br><br>
+                        <strong>Single Threaded:</strong> Long-running tasks can freeze the UI if not handled correctly with asynchronous patterns.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="getting-started">
+            <h2>Learning JavaScript Programming</h2>
+            <p class="section-intro">
+                JavaScript is one of the most accessible languages for beginners, requiring nothing more than a web browser.
+            </p>
+            
+            <div class="languages-grid">
+                <div class="language-card">
+                    <h3>Setup Development Environment</h3>
+                    <p>
+                        All you need is a modern browser (Chrome, Firefox) and a text editor like Visual Studio Code. 
+                        Learn how to use the "Developer Tools" (F12) to debug your code directly in the browser. 
+                        Installing Node.js on your machine will allow you to run JavaScript outside the browser as well.
+                    </p>
+                </div>
+
+                <div class="language-card">
+                    <h3>Master the Fundamentals</h3>
+                    <p>
+                        Focus on variables (let, const), data types, and ES6+ syntax like arrow functions and template literals. 
+                        Understanding the "Asynchronous" model (Promises, Async/Await) is crucial for modern development. 
+                        Deeply learn how the DOM works to interact with HTML elements programmatically.
+                    </p>
+                </div>
+
+                <div class="language-card">
+                    <h3>Practice and Projects</h3>
+                    <p>
+                        Start by building small projects like a To-Do list, a weather app using an API, or a simple game. 
+                        Contribute to open-source projects on GitHub to see how professional codebases are organized. 
+                        Resources like MDN (Mozilla Developer Network) are the gold standard for JavaScript documentation.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips">
+            <h4>"Any application that can be written in JavaScript, will eventually be written in JavaScript." - Jeff Atwood</h4>
+
+            <h2>JavaScript Best Practices:</h2>
+            <ol>
+                <li>
+                    <p>
+                        <strong>Use 'const' and 'let' instead of 'var'.</strong> This ensures proper block-scoping and prevents variable hoisting issues. 
+                        Using 'const' by default makes your code more predictable by preventing accidental reassignments. 
+                        It is a standard practice in modern ES6+ development.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Write clean, modular code by using ES Modules (import/export). 
+                        Breaking your code into smaller files makes it easier to test, debug, and maintain. 
+                        Avoid polluting the global namespace to prevent naming collisions with other scripts or libraries.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Always handle errors in asynchronous code using try/catch blocks with Async/Await. 
+                        Uncaught promise rejections can lead to silent failures that are difficult to track down. 
+                        Providing meaningful error messages improves the user experience when something goes wrong.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Use strict equality (===) instead of loose equality (==). 
+                        The triple equals operator checks both the value and the type, preventing weird type-coercion bugs. 
+                        This simple habit saves hours of debugging time caused by JavaScript's "quirky" type system.
+                    </p>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer">
+            <h4>Sources</h4>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs - JavaScript</a></li>
+                <li><a href="https://javascript.info/" target="_blank">The Modern JavaScript Tutorial</a></li>
+                <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools JS Tutorial</a></li>
+                <li><a href="https://nodejs.org/" target="_blank">Node.js Official Website</a></li>
+            </ul>
+
+            <p>Disclaimer: This content is paraphrased; not copied directly from sources</p>
+            <p>&copy; 2026 - Academic Project CST336 (Maeva AKPACA)</p>
+        </div>
+    </footer>
+</body>
+</html>
