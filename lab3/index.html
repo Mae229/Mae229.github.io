@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <h1>Math Quiz </h1>
+    <p id="scoreText"></p>
+    1. Which one of these is a prime number ?
+    <br>
+    <label>
+        <input id="q1A" type="checkbox" name="q1" value="answer1"> 3
+    </label>
+    <label>
+        <input id="q1B" type="checkbox" name="q1" value="answer2"> 2
+    </label>
+    <label>
+        <input id="q1C" type="checkbox" name="q1" value="answer3">  2026
+    </label>
+    
+    <div id = "answer1"></div>
+    <!-- <p id="q1ChoicesDiv"></p> -->
+    <br>
+    <p id="q1Text"></p>
+    2. Which one of these is a natural number ?
+    <br>
+    <label>
+        <input type="radio" name="q2" value="answer1"> 24.56
+    </label>
+    <label>
+        <input type="radio" name="q2" value="answer2"> ln(3)
+    </label>
+    <label>
+        <input type="radio" name="q2" value="answer3">  16
+    </label>
+     <p id="q2Text"></p>
+    <br>
+
+
+
+    3. What is 4! ? 
+    <br>
+    <label>
+        <input id="q3" type="text" name="q3" > 
+        <button id="q3Btn">Ok</button>
+    </label>
+    <p id="q3Text"></p>
+    <br>
+
+    4. What is the area of a rectangle of base 2 and height 4 ?
+    <br>
+    <label>
+        <input type="radio" name="q4" value="answer1"> 45
+    </label>
+    <label>
+        <input type="radio" name="q4" value="answer2"> 4
+    </label>
+    <label>
+        <input type="radio" name="q4" value="answer3">  15
+    </label>
+     <p id="q4Text"></p>
+    <br>
+
+    5. What does the mod function do ?
+    <br>
+    <select name="q5" id="q5questions">
+        <option value="division"> division </option>
+        <option value="remainder"> returns the remainder  </option>
+        <option value="multiplication"> multiplication </option>
+    </select>
+     <p id="q5Text"></p>
+
+
+    <button id="submit">Submit the Quiz</button>
+
+</body>
+</html>

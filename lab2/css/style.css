@@ -1,0 +1,42 @@
+/* div{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    height:  100vh;
+} */
+body {
+    background-color: pink;
+ }
+#guessWin{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+ h1{
+    color: rgb(18, 18, 105);
+    text-align: center;
+    margin: 0; 
+}
+
+button{
+    display: flex;
+    margin: 0 auto;
+}
+ input{
+    display: flex;
+    margin: 0 auto;
+}
+
+#allGuesses{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+ #guessResult{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}

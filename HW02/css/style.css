@@ -1,0 +1,168 @@
+h1{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+    background: #FD9597;
+    color: #FFFFFF;
+    font-family: 'Fugaz One';
+    text-shadow: #44090D 1px 1px,#44090D -0px 0px,#44090D -1px 1px,#44090D -2px 2px,#44090D -3px 3px,#44090D -4px 4px,#44090D -5px 5px,#44090D -6px 6px,#44090D -7px 7px,#44090D -8px 8px,#44090D -9px 9px,#44090D -10px 10px,#44090D -11px 11px,#44090D -12px 12px,#44090D -13px 13px,#44090D -14px 14px,#44090D -15px 15px,#44090D -16px 16px,#44090D -17px 17px,#44090D -18px 18px,#44090D -19px 19px,#44090D -20px 20px,#44090D -21px 21px,#44090D -22px 22px,#44090D -23px 23px,#44090D -24px 24px,#44090D -25px 25px,#44090D -26px 26px,#44090D -27px 27px,#44090D -28px 28px,#44090D -29px 29px;
+}
+.divquest{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    /* background: #4CC3CE;
+    background-size: 20%; */
+    color: #d92c2c;
+    font-family: 'Sacramento';
+    /* text-shadow: #105357 1px 1px,#105357 -0px 0px,#105357 -1px 1px,#105357 -2px 2px,#105357 -3px 3px,#105357 -4px 4px,#105357 -5px 5px,#105357 -6px 6px,#105357 -7px 7px,#105357 -8px 8px,#105357 -9px 9px,#105357 -10px 10px,#105357 -11px 11px,#105357 -12px 12px,#105357 -13px 13px,#105357 -14px 14px,#105357 -15px 15px,#105357 -16px 16px,#105357 -17px 17px,#105357 -18px 18px,#105357 -19px 19px,#105357 -20px 20px,#105357 -21px 21px,#105357 -22px 22px,#105357 -23px 23px,#105357 -24px 24px,#105357 -25px 25px,#105357 -26px 26px,#105357 -27px 27px,#105357 -28px 28px,#105357 -29px 29px; */
+}
+.question{
+    font-family: "Lucida Handwriting";
+}
+button{
+    border: rgb(128, 0, 0) dotted;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(221, 140, 140);
+
+}
+button:hover{
+    background-color: antiquewhite;
+}
+
+.lastDivQuest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+p{
+    text-align: center;
+}
+
+/* Flower */
+.test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #flowInput{
+    margin: 0 auto;
+}
+#flowInputBtn{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+} */
+
+/* #lastDivQuest label{
+    display: inline-block;
+} */
+
+/* #choice{
+    display: inline-block;
+} */
+
+.forc{
+    display: inline-block;
+}
+
+#flowerText{
+    text-align: center;                                                                    font-family: 'Maulie Script', sans-serif;
+                                                
+                                                
+}
+
+#rulesText{
+    text-align: center;
+    font-size: large;
+                                                                        /* font-family: 'Bruno Ace', sans-serif; */
+    font-family: 'Lexend', sans-serif;
+                                                
+                                                                        /* font-family: 'Playpen Sans', sans-serif; */
+                                                
+}
+#rulesText2{
+    text-align: center;
+    font-size: large;
+                                                                        /* font-family: 'Bruno Ace', sans-serif; */
+    font-family: 'Lexend', sans-serif;
+                                                
+                                                
+                                                                        /* font-family: 'Playpen Sans', sans-serif; */
+                                                
+}
+#rulesText3{
+    text-align: center;
+    font-size: large;
+                                                                        /* font-family: 'Bruno Ace', sans-serif; */
+    font-family: 'Lexend', sans-serif;
+                                                
+                                                
+                                                                        /* font-family: 'Playpen Sans', sans-serif; */
+                                                
+}
+
+#attemptsText{
+     text-align: center;
+    font-size: large;
+                                                                        /* font-family: 'Bruno Ace', sans-serif; */
+    font-family: 'Lexend', sans-serif;
+}
+#wordText{
+    text-align: center;
+    font-size: large;
+                                                                        /* font-family: 'Bruno Ace', sans-serif; */
+    font-family: 'Lexend', sans-serif;
+}
+#wordSearchText{
+     text-align: center;
+    font-size: large;
+                                                                        /* font-family: 'Bruno Ace', sans-serif; */
+    font-family: 'Lexend', sans-serif;
+}
+
+#lettersFound{
+     text-align: center;
+    font-size: large;
+                                                                        /* font-family: 'Bruno Ace', sans-serif; */
+    font-family: 'Lexend', sans-serif;
+}
+#letterCount{
+     text-align: center;
+    font-size: large;
+                                                                        /* font-family: 'Bruno Ace', sans-serif; */
+    font-family: 'Lexend', sans-serif;
+}
+#displayLetters{
+     text-align: center;
+    font-size: large;
+                                                                        /* font-family: 'Bruno Ace', sans-serif; */
+    font-family: 'Lexend', sans-serif;
+}
+#winText{
+    text-align: center;
+}
+#wordLength{
+     text-align: center;
+    font-size: large;
+                                                                        /* font-family: 'Bruno Ace', sans-serif; */
+    font-family: 'Lexend', sans-serif;
+}
+#chocoText{
+    text-align: center;
+                                                                        font-family: 'Playpen Sans', sans-serif;
+                                                
+}
+#safeTimerDisplay{
+    text-align: center;
+}
+#letter {
+    text-align: center;
+   font-family: 'Playpen Sans', sans-serif;
+}
+
+
