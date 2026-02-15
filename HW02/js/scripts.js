@@ -61,7 +61,7 @@ function setBgColor(){
     else if(bgColor == "red")
         color = "rgb(247, 54, 54)";
     else if (bgColor == "yellow")
-        color = "rgb(230, 230, 123)";
+        color = "rgb(227, 216, 64)";
     else if(bgColor == "green")
         color = "rgb(155, 230, 123)"
     else if(bgColor == "black")

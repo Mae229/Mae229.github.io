@@ -145,6 +145,9 @@ p{
 }
 #winText{
     text-align: center;
+    font-size: large;
+                                                                        /* font-family: 'Bruno Ace', sans-serif; */
+    font-family: 'Lexend', sans-serif;
 }
 #wordLength{
      text-align: center;
@@ -165,4 +168,12 @@ p{
    font-family: 'Playpen Sans', sans-serif;
 }
 
-
+#names{
+    text-align: center;
+   font-family: 'Playpen Sans', sans-serif;
+}
+#names2{
+    text-align: center;
+   font-family: 'Playpen Sans', sans-serif;
+   font-size: large;
+}

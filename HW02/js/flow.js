@@ -59,11 +59,13 @@ console.log("valName = " + valName);
 let bgColor = localStorage.getItem("bg-Color");
 document.querySelector("body").style.backgroundColor = bgColor;
 
-let dico = ["interpersonal" , "sweetheart" , "attraction", "friends", "intimacy", "emotion", "friendship", "passion", "affection", "relationship", "Maeva"];
+let dico = ["interpersonal" , "sweetheart" , "attraction", "friends", "intimacy", "emotion", "friendship", "passion", "affection", "relationship", "maeva"];
 let attempts = 10;
 rulesButton.addEventListener("click",function(){
         rulesButton.style.visibility = "hidden";
         rulesText.textContent = " Let's go then !";
+        rulesText2.textContent = "  ";
+        rulesText3.textContent = " ";
         wordLength.textContent = " Your word has " + word.length + " letters ";
         letter.textContent = " The letter numero " + (randLetter + 1) + " is '" + word[randLetter] +"'";
     });
@@ -87,6 +89,7 @@ let randLetter = (Math.floor(Math.random() * word.length));
     
         // J'aurai besoin de creer un array qui va me servir de dictionnaire je peux y mettre une 50aine de mots ca devrait suffire.
         console.log("works");
+        let letterCpt= 0;
         
         attemptsText.textContent = " You have " + attempts + " attempts remaining";
         let flowInput = document.querySelector("#flowInput").value;
@@ -95,7 +98,15 @@ let randLetter = (Math.floor(Math.random() * word.length));
         let bool2 = 0;
         if(attempts == 0)
         {
-            winText.textContent = " You have failed to find the word. Reload the page to play again";
+            winText.textContent = " You have failed to find the word. Reload the page to play again.";
+            letterCount.textContent = " ";
+            lettersFound.textContent = " ";
+            displayLetters.textContent = " ";
+            wordSearchText.textContent = " ";
+            attemptsText.textContent = " " ;
+            wordLength.textContent = " Happy Valentine though! ";
+            var audio = new Audio('mp3/Over.mp3');
+            audio.play();
         }
         else if(attempts > 0)
         {
@@ -105,7 +116,7 @@ let randLetter = (Math.floor(Math.random() * word.length));
                 bool2 = 1;
             }
             for (let i = 0; i < word.length; i++) {
-                if(flowInput == word[i])
+                if(flowInput == word[i] || flowInput == word[i] )
                 {
                     wordSearchText.textContent = "'" + flowInput + "' is in the word good job !";
                     foundLetters.push(flowInput);
@@ -130,9 +141,20 @@ let randLetter = (Math.floor(Math.random() * word.length));
 
             if(bool2 == 1 && attempts != 0){
                 winText.textContent = "Congratulations ! You've found the word \n Therefore , you have won " + (10 - attempts) + " flowers for " + valName + "'s bouquet 💐"  ;
+                letterCount.textContent = " ";
+                lettersFound.textContent = " ";
+                displayLetters.textContent = " ";
+                wordSearchText.textContent = " ";
+                attemptsText.textContent = " " ;
+                rulesText2.textContent = " 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉";
+                rulesText3.textContent = " I'm sure " + valName + " will be so happy";
+                rulesText.textContent = " 🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹";
+                wordLength.textContent = " Happy Valentine ! ";
+                letter.textContent = " ";
+                var audio = new Audio('mp3/rebanav.mp3');
+                audio.play();
             }
-
-           
+            
             attempts--;
         }
         
