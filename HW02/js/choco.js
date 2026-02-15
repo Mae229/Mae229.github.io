@@ -74,7 +74,7 @@ rulesButton.addEventListener("click",function(){
 
 function chocolateGame(){
     
-    alert("test choco bon");
+    // alert("test choco bon");
     let q1 = document.querySelector("#q1").value;
     if(q1 == 27)
     {
@@ -140,7 +140,7 @@ function chocolateGame(){
     }
 
     let q6 = document.querySelector("#q66").value;
-    if(q6 == "Lome")
+    if(q6.toUpperCase() == "Lome".toUpperCase())
     {
         score += 20;
         q6Text.textContent = "Correct ";
@@ -166,7 +166,7 @@ function chocolateGame(){
     }
 
     let q8 = document.querySelector("input[name=q8]:checked").value;
-    if(q8 == "America" )
+    if(q8 == "Macron" )
     {
         score += 20;
         q8Text.textContent = "Correct ";
@@ -179,7 +179,7 @@ function chocolateGame(){
     }
 
     let q9 = document.querySelector("#q99").value;
-    if(q9 == "bad bunny" || q9 ==  "Bad Bunny" || q9 == "BAD BUNNY")
+    if(q9.toUpperCase() == "bad bunny".toUpperCase() || q9 ==  "Bad Bunny" || q9 == "BAD BUNNY")
     {
         score += 20;
         q9Text.textContent = "Correct ";
@@ -192,7 +192,7 @@ function chocolateGame(){
     }
 
     let q10 = document.querySelector("#q10").value;
-    if(q10 == "Porto Novo" || q10 == " porto novo " || q10 == "PORTO NOVO")
+    if(q10.toUpperCase() == "Porto Novo".toUpperCase() || q10 == " porto novo " || q10 == "PORTO NOVO")
     {
         score += 20;
         q10Text.textContent = "Correct ";
@@ -218,7 +218,7 @@ function chocolateGame(){
     }
 
     let q12 = document.querySelector("#q12").value;
-    if(q12 == "Maeva" || q12 == "maeva" || q12 == "MAEVA")
+    if(q12.toUpperCase() == "Maeva".toUpperCase() || q12 == "maeva" || q12 == "MAEVA")
     {
         score += 20;
         q12Text.textContent = "Correct ";
@@ -231,7 +231,7 @@ function chocolateGame(){
     }
 
     let q13 = document.querySelector("#q13").value;
-    if(q13 == "Marc" || q13 == "Mark")
+    if(q13.toUpperCase() == "Marc".toUpperCase() || q13.toUpperCase() == "Mark".toUpperCase())
     {
         score += 20;
         q13Text.textContent = "Correct ";
@@ -256,8 +256,8 @@ function chocolateGame(){
         q12Text.style.color = "red";
     }
 
-    let q15 = document.querySelector("#q12").value;
-    if(q15 == "whatever")
+    let q15 = document.querySelector("#q15").value;
+    if(q15.toUpperCase() == "whatever".toUpperCase())
     {
         score += 50;
         q15Text.textContent = "Correct ";
@@ -278,7 +278,7 @@ function chocolateGame(){
         winText3.textContent += "🍫 ";
         
     }
-    
+    console.log(q15.toUpperCase());
     bool = 1;
 }
 

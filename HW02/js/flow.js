@@ -110,13 +110,13 @@ let randLetter = (Math.floor(Math.random() * word.length));
         }
         else if(attempts > 0)
         {
-            if (flowInput == word && attempts < 6)
+            if (flowInput.toUpperCase() == word.toUpperCase() && attempts < 6)
             {
                 //Winnnnn
                 bool2 = 1;
             }
             for (let i = 0; i < word.length; i++) {
-                if(flowInput == word[i] || flowInput == word[i] )
+                if(flowInput.toUpperCase() == word[i].toUpperCase() || flowInput == word[i] )
                 {
                     wordSearchText.textContent = "'" + flowInput + "' is in the word good job !";
                     foundLetters.push(flowInput);
@@ -127,6 +127,7 @@ let randLetter = (Math.floor(Math.random() * word.length));
                 }
                 console.log(word[i]);
             }
+            console.log(flowInput.toUpperCase());
             
             if(bool == 0)
                 wordSearchText.textContent = flowInput + " is not in the word. Keep going !";
