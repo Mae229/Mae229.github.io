@@ -127,7 +127,7 @@ let randLetter = (Math.floor(Math.random() * word.length));
                 }
                 console.log(word[i]);
             }
-            console.log(flowInput.toUpperCase());
+            console.log(flowInput.toUpperCase());  
             
             if(bool == 0)
                 wordSearchText.textContent = flowInput + " is not in the word. Keep going !";
