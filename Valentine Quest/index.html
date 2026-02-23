@@ -12,7 +12,7 @@
     <main>
         <div class="divquest">
             <label>
-                <p class="question"> Who are you playing for ?</p>
+                <p class="question"> What is the name of your Valentine ?</p>
                 <!-- <p class="question">(Who are you playing for ? )</p> -->
                 <input id="valName" type="text">
                 <button id="valNameButton"> Validate </button>
@@ -47,19 +47,37 @@
         
         <hr>
         <div class="lastDivQuest">
-            Let's play a little game !
+            <p class="question"> What does your Valentine prefers ? </p>
         </div>
-    <div class="lastDivQuest">
-    
-        <br>
-        <label class="forc">
-            <a href="Flowers.html">
-                <button id="startflowButton"> Start  </button>
+        <div class="lastDivQuest">
+        
+                <label class="forc">
+                    <input class="choice" type="radio" name="choice" value="C"> Chocolate
+                    
+                    <a href="Chocolate.html">
+                        <button id="startChocoButton"> Start </button>
+                    </a>
+                </label>
+                <br>
+                <label class="forc">
+                    <input class="choice" type="radio" name="choice" value="F"> Flowers
+                
+                    <a href="Flowers.html">
+                        <button id="startflowButton"> Start  </button>
+                    </a>
+                    
+                </label>
+         
+        </div>
+        <div class="lastDivQuest">
+            <p class="question"> Click here to make a compatibility test </p>
+            
+        </div>
+        <div class="lastDivQuest">
+            <a href="compatibility.html">
+                    <button id="compatibiltyTest"> Click </button>
             </a>
-        </label>
-    
-    </div>
-
+        </div>
         
         <!-- <p id="valMessage"></p>
     <p id="valName"></p> -->

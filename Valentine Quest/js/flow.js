@@ -11,8 +11,8 @@
 // }
 // start();
 
-// var audio = new Audio('mp3/Animalcrossing.mp3');
-// audio.play();
+var audio = new Audio('mp3/Animalcrossing.mp3');
+audio.play();
 
 
 let flowInputBtn = document.querySelector("#flowInputBtn");
@@ -53,10 +53,6 @@ let wordText = document.querySelector("#wordText");
 //         });
  
 // let valName =  localStorage.getItem("val-Name");
-let img = document.createElement("img");
-img.src = "img/tomodachi.jpg";
-document.getElementById("imgg").appendChild(img);
-
 let valName =  localStorage.getItem("val-Name");
 console.log("valName = " + valName);
 
@@ -109,6 +105,8 @@ let randLetter = (Math.floor(Math.random() * word.length));
             wordSearchText.textContent = " ";
             attemptsText.textContent = " " ;
             wordLength.textContent = " Happy Valentine though! ";
+            var audio = new Audio('mp3/Over.mp3');
+            audio.play();
         }
         else if(attempts > 0)
         {
@@ -154,6 +152,8 @@ let randLetter = (Math.floor(Math.random() * word.length));
                 rulesText.textContent = " 🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹";
                 wordLength.textContent = " Happy Valentine ! ";
                 letter.textContent = " ";
+                var audio = new Audio('mp3/rebanav.mp3');
+                audio.play();
             }
             
             attempts--;

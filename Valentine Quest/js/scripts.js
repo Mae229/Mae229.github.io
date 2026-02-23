@@ -18,8 +18,8 @@ valNameButton.addEventListener("click",saveValName);
 playerNameButtton.addEventListener("click",displayNames);
 bgColorButton.addEventListener("click",setBgColor);
 
-// var audio = new Audio('mp3/Animalcrossing.mp3');
-// audio.play();
+var audio = new Audio('mp3/Animalcrossing.mp3');
+audio.play();
 
 function saveValName(){
     let valName = document.querySelector("#valName").value;
@@ -29,9 +29,9 @@ function saveValName(){
 
 function displayNames(){
     let valName = document.querySelector("#valName").value;
-    // let playerName = document.querySelector("#playerName").value;
-    // var audio2 = new Audio('mp3/ouu.mp3');
-    // audio2.play();
+    let playerName = document.querySelector("#playerName").value;
+    var audio2 = new Audio('mp3/ouu.mp3');
+    audio2.play();
     names.textContent = playerName + " is playing for " + valName;
     
 }

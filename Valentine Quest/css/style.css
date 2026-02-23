@@ -47,11 +47,7 @@ p{
     justify-content: center;
     align-items: center;
 }
-#imgg{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
+
 /* #flowInput{
     margin: 0 auto;
 }
