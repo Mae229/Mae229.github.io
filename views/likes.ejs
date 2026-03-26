@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+    <title>Lab 6: Quotes</title>
+</head>
+<body>
+    <h1 class="text-center"> Famous Quotes </h1>
+    <nav class="text-center"> <a href="/"> Home </a> </nav>
+
+    <div class="container">
+        <% for (let i of rows) { %>
+            <i class="fs-5"> <%= i.quote %> </i><br>
+            <%= i.firstName %> <%= i.lastName %><br>
+            <span class="text-muted">  <%= i.likes %> likes </span><br><br>
+        <% } %>
+    </div>
+
+    <%- include('partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <%- include('partials/head') %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6</title>
+</head>
+
+<body>
+    <h1 class="text-center"> Famous Quotes </h1>
+    <nav class="text-center"> <a href="/"> Home </a> </nav>
+
+    <div class="container">
+        <% for (let i of rows) { %>
+            <i class="fs-5"> <%= i.quote %> </i><br>
+            <%= i.firstName %> <%= i.lastName %><br><br>
+        <% } %>
+    </div>
+
+    <%- include('partials/footer') %>
+    
+</body>
+</html>
