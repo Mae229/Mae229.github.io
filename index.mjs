@@ -8,8 +8,10 @@ app.use(express.urlencoded({extended:true}));
 //setting up database connection pool, replace values in red
 const pool = mysql.createPool({
     host: "wcwimj6zu5aaddlj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    // user: process.env.DB_USERNAME,
     user: "b6o7z5vvduupgf9s",
     password: "c58r0zliq73gnrlx",
+    // password: process.env.DB_PWD,
     database: "rmkcz1fwwlvd1tcp",
     connectionLimit: 10,
     waitForConnections: true
@@ -39,7 +41,7 @@ app.get("/dbTest", async(req, res) => {
 app.get("/searchByKeyword", async(req, res) => {
    try {
         let keyword = req.query.keyword;
-        let sql = `SELECT quote , firstName, lastName
+        let sql = `SELECT quote , firstName, lastName, authorId
                     FROM quotes 
                     NATURAL JOIN authors
                     WHERE quote LIKE ? `;
@@ -54,20 +56,28 @@ app.get("/searchByKeyword", async(req, res) => {
     }
 });
 
-app.get("/searchByAuthor", async(req, res) => {
-   try {
-        let authorId = req.query.authorId;
-        let sql = `SELECT quote, firstName, lastName
-                   FROM quotes
-                   NATURAL JOIN authors
-                   WHERE authorId = ?`;
-        let sqlParams = [authorId];
-        const [rows] = await pool.query(sql, sqlParams);
-        res.render("quotes.ejs", { rows });
-    } catch (err) {
-        console.error("Database error:", err);
-        res.status(500).send("Database error!");
-    }
+
+// app.get("/searchByAuthor", async(req, res) => {
+//    try {
+//         let authorId = req.query.authorId;
+//         let sql = `SELECT quote, firstName, lastName, authorId
+//                    FROM quotes
+//                    NATURAL JOIN authors
+//                    WHERE authorId = ?`;
+//         let sqlParams = [authorId];
+//         const [rows] = await pool.query(sql, sqlParams);
+//         res.render("quotes.ejs", { rows });
+//     } catch (err) {
+//         console.error("Database error:", err);
+//         res.status(500).send("Database error!");
+//     }
+// });
+
+app.get('/searchByAuthor', async (req, res) => {
+   let authorId = req.query.authorId;
+   let sql = ``;
+   const [rows] = await pool.query(sql);              
+   res.render('quotes.ejs', {rows})
 });
 
 app.get("/searchByCategory", async (req, res) => {
@@ -103,6 +113,18 @@ app.get("/searchByLikes", async (req, res) => {
         res.status(500).send("Database error!");
     }
 });
+
+//API to get Author information based on author ID
+app.get('/api/author/:author_Id', async(req, res) => {
+    let authorId = req.params.author_Id
+    let sql =   `SELECT *
+                FROM authors
+                WHERE authorId = ?`;
+    const [authorInfo] = await pool.query(sql,[authorId]);
+    res.send(authorInfo);
+    // res.render("home.ejs", { authors, categories });
+});
+
 
 app.listen(3000, ()=>{
     console.log("Express server running")

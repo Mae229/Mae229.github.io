@@ -14,9 +14,50 @@
     <div class="container">
         <% for (let i of rows) { %>
             <i class="fs-5"> <%= i.quote %> </i><br>
-            <%= i.firstName %> <%= i.lastName %><br><br>
+            <a href="#" class="authorNames" id="<%= i.authorId %>">
+                <%= i.firstName %> <%= i.lastName %>
+            </a><br><br>
         <% } %>
     </div>
+
+    <dialog id="authorModal">
+        <!-- creating modal window  -->
+        <div id="auhtorInfo">
+            <h1 id="authorName"></h1>
+            <img id="authorImage" width="300">
+            <h2 id="country"> </h2>
+            <p id="profession"></p>
+            <p id="sex">  </p>
+            <p> <strong> Biography </strong></p>
+            <p id="bio" ></p>
+            <button commandfor="authorModal" command="close">Close</button>
+        </div>
+    </dialog> 
+    <script>
+        let authorsLinks = document.querySelectorAll(".authorNames");
+        for(let i of authorsLinks ){
+            i.addEventListener("click",displayAuthorInfo);
+        }
+        async function displayAuthorInfo(){
+            // let authorId = this.getAttribute("author_Id");
+            // alert("displaying " + this.id  );
+
+            let url = "api/author/" + this.id;
+            let response = await fetch(url);
+            let data = await response.json();
+            console.log(data);
+            document.querySelector("#authorName").textContent = data[0].firstName + " " + data[0].lastName;
+            document.querySelector("#authorImage").src = data[0].portrait;
+            document.querySelector("#country").textContent = data[0].country;
+            document.querySelector("#profession").textContent = "Profession: " + data[0].profession;
+            document.querySelector("#sex").textContent =  "Sex: " +  data[0].sex;
+            document.querySelector("#bio").textContent =  data[0].biography;
+            
+
+            console.log(data[0].firstName);
+            document.querySelector("#authorModal").showModal();
+        }
+    </script>
 
     <%- include('partials/footer') %>
     

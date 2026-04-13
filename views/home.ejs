@@ -7,11 +7,25 @@
     <title>Lab6 - Home </title>
 </head>
 <body>
-    <form action="/searchByKeyword" class="mb-3">
+        <form action="/searchByKeyword" class="mb-3">
             <label class="form-label fw-bold"> Keyword: </label>
-            <input type="text" name="keyword" class="form-control">
-            <button class="btn btn-primary mt-2"> Search </button>
+            <input id="key" type="text" name="keyword" class="form-control">
+            <button id="btn" class="btn btn-primary mt-2"> Search </button>
+            <p id="errorMessage"></p>
+            <script>
+            let errorMessage = document.querySelector("#errorMessage");
+            let btn = document.querySelector("#btn").addEventListener("click",function (e) {
+            let key = document.querySelector("#key").value;
+                if(key.length < 3){
+                    e.preventDefault(); 
+                    errorMessage.textContent = "Keyword should be atleast 3 characters.";
+                    errorMessage.style.color = "red";
+                    
+                }
+            });
+        </script>
         </form>
+        
 
         <form action="/searchByAuthor" class="mb-3">
             <label class="form-label fw-bold"> Author: </label>
@@ -22,7 +36,7 @@
                     </option>
                 <% } %>
             </select>
-            <button class="btn btn-primary mt-2"> Search </button>
+            <button class="btn btn-primary mt-2"> Search by Author  </button>
         </form>
 
         <form action="/searchByCategory" class="mb-3">
@@ -32,7 +46,7 @@
                     <option value="<%= c.category %>"> <%= c.category %> </option>
                 <% } %>
             </select>
-            <button class="btn btn-primary mt-2"> Search </button>
+            <button class="btn btn-primary mt-2"> Search by Cathegory </button>
         </form>
 
         <form action="/searchByLikes" class="mb-3">
@@ -42,7 +56,7 @@
                 <span> to </span>
                 <input type="number" name="maxLikes" class="form-control" placeholder="Max">
             </div>
-            <button class="btn btn-primary mt-2"> Search </button>
+            <button class="btn btn-primary mt-2"> Search by Likes </button>
         </form>
 
     </div>
